@@ -1,0 +1,32 @@
+{
+  "name": "itot-tech-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IT OT TECH company website: Next.js static export with an interactive IT-OT ecosystem.",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/finalize-export.mjs",
+    "preview": "node scripts/preview.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:config": "node --test scripts/config.test.mjs",
+    "verify:export": "node scripts/verify-export.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "next": "^16.3.5",
+    "react": "~19.2.0",
+    "react-dom": "~19.2.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.180.0",
+    "typescript": "^5.9.0"
+  }
+}
